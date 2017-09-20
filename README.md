@@ -1,6 +1,6 @@
-# pharmaspace_quiz
+# vuex reactive app with material inspired views
 
-> simple quiz module
+> simple module
 
 ## Build Setup
 
