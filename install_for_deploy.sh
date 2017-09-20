@@ -1,7 +1,3 @@
 #!/bin/bash
 
-rm -rf ./solution/public/static
-cp -r ./dist/* ../solution/public/
-
-#rm -rf ../solution/public/static
-#cp -r .//vue/static/ ../solution/public/static/
+# use this file to do this with the built binaries location in dist/
