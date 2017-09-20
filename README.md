@@ -1,6 +1,6 @@
 # vuex reactive app with material inspired views
 
-> simple module
+> boilerplate template
 
 ## Build Setup
 
