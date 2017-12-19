@@ -35,7 +35,7 @@ npm test
   Options:
 
     -V, --version           output the version number
-    -c, --component [name]  Add new component with [name] (default: Create Component)
+    -c, --component [name]  Add new component with [name] (default: Sample)
     -r, --route             Generate a route for the new component
     -d, --destroy           Remove a component
     -h, --help              output usage information
