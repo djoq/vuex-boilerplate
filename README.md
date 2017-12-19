@@ -24,4 +24,22 @@ npm run unit
 npm test
 ```
 
+## CLI and scaffolding components
+
+`node cli.js --help`
+
+````
+  Usage: cli [options]
+
+
+  Options:
+
+    -V, --version           output the version number
+    -c, --component [name]  Add new component with [name] (default: Create Component)
+    -r, --route             Generate a route for the new component
+    -d, --destroy           Remove a component
+    -h, --help              output usage information
+````
+
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
