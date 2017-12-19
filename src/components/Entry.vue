@@ -20,7 +20,7 @@ export default {
   },
   data () {
     return {
-      msg: 'Collision explorer'
+      msg: 'Your Page title'
     }
   }
 }
@@ -33,7 +33,7 @@ export default {
   /*background: url('/static/logo.png');*/
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 100px;
+  padding-top: 10px;
   max-height: 40px;
 }
 .ceil-left {

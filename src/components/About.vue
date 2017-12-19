@@ -4,17 +4,14 @@
           <img class="faded" src="static/19730706_0817.jpg" >
 
             <ui-tabs class="classy" fullwidth>
-                <ui-tab title="Metrics">
+                <ui-tab title="Tab 1">
                     Todo: fill this out
                 </ui-tab>
 
-                <ui-tab title="Employees">
+                <ui-tab title="Tab 2">
                    Todo: add a new component
                 </ui-tab>
 
-                <ui-tab title="Offices">
-                   Todo: add another...
-                </ui-tab>
 
 
             </ui-tabs>

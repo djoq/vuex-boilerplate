@@ -7,15 +7,17 @@ import router from './router'
 import {UiButton, UiModal, UiTab, UiTabs, UiTextbox} from 'keen-ui'
 import '../node_modules/keen-ui/dist/keen-ui.min.css'
 
-import {about, carousel} from './components/'
+
+import imported from './components/'
 
 import VueParticles from 'vue-particles'
 Vue.use(VueParticles)
 
 Vue.config.productionTip = false
 
-Vue.component('About', about)
-Vue.component('Carousel', carousel)
+Vue.component('About', imported.about)
+Vue.component('Carousel', imported.carousel)
+// componentAdditions
 
 Vue.component('ui-button', UiButton)
 Vue.component('ui-modal', UiModal)
