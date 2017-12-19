@@ -4,12 +4,13 @@ const program = require('commander');
 const tools = require('./tools/cli-tools')
 
 program.version('0.1.0')
-  .option('-c, --component [name]', 'Add new component with [name]', 'Create Component')
+  .option('-c, --component [name]', 'Add new component with [name]', 'Sample')
   .option('-r, --route', 'Generate a route for the new component')
   .option('-d, --destroy', 'Remove a component').parse(process.argv)
 
 if(program.args.length === 0 && program.rawArgs.length < 3) {
   console.log('no arguments, try passing --help.');
+  process.exit();
 }
 
 // let state = {};
