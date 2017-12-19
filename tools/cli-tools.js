@@ -37,7 +37,7 @@ exports.deportReplacers = (name) => {
     if (impIndex === -1 || expIndex === -1) return handleConflicts(filename)
 
 	data.splice(impIndex, 0, `import `+capitalize(name)+` from './`+capitalize(name)+`'`);
-	data.splice(expIndex+1, 0, `  `+name.toLowerCase()+`: `+capitalize(name));
+	data.splice(expIndex+1, 0, `  `+name.toLowerCase()+`: `+capitalize(name)+`,`);
 	var text = data.join("\n");
 
 	fs.writeFile('./src/components/index.js', text, (err) => {
