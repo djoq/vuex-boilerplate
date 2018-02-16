@@ -19,9 +19,15 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.scss', '.json'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
+        sas: 'node_modules/keen-ui/src',
+        directives: 'node_modules/keen-ui/src/directives',
+        helpers: 'node_modules/keen-ui/src/helpers',
+        mixins: 'node_modules/keen-ui/src/mixins',
+        styles: 'node_modules/keen-ui/src/styles',
+
+      'vue$': 'vue/dist/vue.common.js',
       '@': resolve('src')
     }
   },

@@ -5,13 +5,18 @@ import Entry from '@/components/Entry'
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Entry',
-      component: Entry
-    },
-    // routeAdditions
-  ]
+let menu = [
+  {
+    path: '/',
+    name: 'Entry',
+    component: Entry
+  },
+  // routeAdditions
+]
+let router = new Router({
+  routes: menu
 })
+
+export { menu, router }
+
+

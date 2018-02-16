@@ -2,16 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import {router} from './router'
 
-import {UiButton, UiModal, UiTab, UiTabs, UiTextbox} from 'keen-ui'
+import {UiIcon, UiSelect, UiButton, UiIconButton, UiModal, UiTab, UiTabs, UiTextbox} from 'keen-ui'
 import '../node_modules/keen-ui/dist/keen-ui.min.css'
 
-
 import imported from './components/'
-
-import VueParticles from 'vue-particles'
-Vue.use(VueParticles)
 
 Vue.config.productionTip = false
 
@@ -19,11 +15,16 @@ Vue.component('About', imported.about)
 Vue.component('Carousel', imported.carousel)
 // componentAdditions
 
+Vue.component('side-bar', imported.sideBar)
 Vue.component('ui-button', UiButton)
 Vue.component('ui-modal', UiModal)
 Vue.component('ui-tab', UiTab)
 Vue.component('ui-tabs', UiTabs)
 Vue.component('ui-textbox', UiTextbox)
+Vue.component('ui-icon', UiIcon)
+Vue.component('ui-select', UiSelect)
+Vue.component('ui-icon-button', UiIconButton)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
