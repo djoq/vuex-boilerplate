@@ -1,5 +1,6 @@
 <template>
      <div id="app" class="keen-docs">
+
         <side-bar class="is-desktop"></side-bar>
 
         <transition name="transition-fade">
@@ -44,8 +45,6 @@
           <div class="keen-docs-content__page-content" ref="pageContent">
               <router-view></router-view>
           </div>
-      </section>
-
   </div>
 </template>
 
@@ -81,8 +80,6 @@ export default {
 }
 </script>
 
-<style>
-@import './assets/docs.bundle.css'
-
-
+<style lang="scss">
+@import './styles/index.scss';
 </style>

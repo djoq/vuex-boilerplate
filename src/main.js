@@ -2,7 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import {router} from './router'
+import VueRouter from 'vue-router'
+import {routes} from './router'
 
 import {UiIcon, UiSelect, UiButton, UiIconButton, UiModal, UiTab, UiTabs, UiTextbox} from 'keen-ui'
 import '../node_modules/keen-ui/dist/keen-ui.min.css'
@@ -11,7 +12,7 @@ import imported from './components/'
 
 Vue.config.productionTip = false
 
-Vue.component('About', imported.about)
+Vue.component('About', imported.overVue)
 Vue.component('Carousel', imported.carousel)
 // componentAdditions
 
@@ -24,6 +25,14 @@ Vue.component('ui-textbox', UiTextbox)
 Vue.component('ui-icon', UiIcon)
 Vue.component('ui-select', UiSelect)
 Vue.component('ui-icon-button', UiIconButton)
+
+
+Vue.use(VueRouter)
+
+const router = new VueRouter({
+  routes,
+  linkActiveClass: 'is-active'
+})
 
 /* eslint-disable no-new */
 new Vue({

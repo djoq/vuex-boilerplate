@@ -1,12 +1,12 @@
 // node.js
 
-import About from './About'
+import OverVue from './OverVue'
 import Carousel from './Carousel'
 import SideBar from './Sidebar'
 // importAdditions
 
 let Exports = {
-  about: About,
+  overVue: OverVue,
   sideBar: SideBar,
   carousel: Carousel,
   // exportAdditions

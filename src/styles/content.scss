@@ -46,9 +46,12 @@
 }
 
 .keen-docs-content__page-content {
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
+  top: 52px;
+  position: fixed;
+  left: rem-calc(302px);
+  &.is-mobile {
+    left: 0;
+  }
 }
 
 .page {
