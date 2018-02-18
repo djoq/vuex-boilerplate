@@ -14,6 +14,8 @@ Vue.config.productionTip = false
 
 Vue.component('About', imported.overVue)
 Vue.component('Carousel', imported.carousel)
+Vue.component('Test', imported.Test)
+Vue.component('Test', imported.Test)
 // componentAdditions
 
 Vue.component('side-bar', imported.sideBar)

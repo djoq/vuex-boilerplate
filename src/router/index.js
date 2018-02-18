@@ -1,6 +1,5 @@
 import Entry from '@/components/Entry'
 import OverVue from '@/components/OverVue'
-
 // importAdditions
 
 const menu = [{
@@ -15,7 +14,9 @@ const menu = [{
     title: 'Overview',
     component: OverVue,
     sourceUrl: 'components/OverVue.vue'
-  }]
+  }
+// routeAdditions
+  ]
 }]
 
 

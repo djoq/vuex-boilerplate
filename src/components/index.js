@@ -9,6 +9,7 @@ let Exports = {
   overVue: OverVue,
   sideBar: SideBar,
   carousel: Carousel,
-  // exportAdditions
+// exportAdditions
+
 }
 export default Exports
