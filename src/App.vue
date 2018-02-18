@@ -42,8 +42,8 @@
               </div>
           </div>
 
-          <div class="keen-docs-content__page-content" ref="pageContent">
-              <router-view></router-view>
+          <div class="keen-docs-content__page-content is-desktop" ref="pageContent">
+              <router-view ></router-view>
           </div>
   </div>
 </template>

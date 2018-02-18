@@ -48,10 +48,8 @@
 .keen-docs-content__page-content {
   top: 52px;
   position: fixed;
-  left: rem-calc(302px);
-  &.is-mobile {
-    left: 0;
-  }
+  padding-left: rem-calc(302px)
+
 }
 
 .page {
@@ -127,6 +125,9 @@ tbody td:first-child {
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
+    .keen-docs-content__page-content {
+      padding-left: rem-calc(16px)
+    }
     .keen-docs-content__toolbar-content {
         padding-left: rem-calc(16px);
         padding-right: rem-calc(16px);
