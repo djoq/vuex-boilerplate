@@ -1,7 +1,7 @@
 <template>
     <aside class="keen-docs-sidebar">
         <div class="keen-docs-sidebar__header">
-            <span class="keen-docs-sidebar__header-brand">Keen UI</span>
+            <span class="keen-docs-sidebar__header-brand">{{brand}}</span>
 
             <a
                 class="keen-docs-sidebar__header-version"
@@ -92,6 +92,7 @@ export default {
   data () {
     return {
       version: '1.0.1',
+      brand: process.env.META.title,
       menu
     }
   },

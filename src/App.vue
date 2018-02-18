@@ -54,7 +54,7 @@ export default {
   data () {
     return {
       showSidebar: false,
-      description: 'Keen UI - A lightweight collection of essential UI components written with Vue and inspired by Material Design.'
+      description: process.env.META.description
     }
   },
   watch: {
