@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js && ./install_for_deploy.sh",
+    "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "mocha --compilers :./tools/babel-setup.js --recursive --watch ./test/*.js",
     "lint": "eslint --ext .js,.vue src test/unit/specs"
@@ -23,6 +23,7 @@
     "vue": "^2.2.6",
     "vue-material": "^0.7.1",
     "vue-router": "^2.3.1",
+    "vue-socket.io": "^2.1.1-b",
     "vuex": "^2.3.1"
   },
   "devDependencies": {

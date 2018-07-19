@@ -1,14 +1,23 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
 import {routes} from './router'
+import store from './store/index.js'
+
+import VueSocketio from 'vue-socket.io'
 
 import {UiIcon, UiSelect, UiButton, UiIconButton, UiModal, UiTab, UiTabs, UiTextbox} from 'keen-ui'
 import '../node_modules/keen-ui/dist/keen-ui.min.css'
 
 import imported from './components/'
+import config from '../env.js'
+
+const socketUri = config('SOCKET_URL')
+Vue.use(VueSocketio, socketUri)
+
 
 Vue.config.productionTip = false
 
@@ -39,6 +48,21 @@ const router = new VueRouter({
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  sockets: {
+    connect: () => {
+      store.commit('switchSocket', true)
+      console.log('socket connected')
+    },
+    disconnect: () => {
+      store.commit('switchSocket', false)
+      console.log('the server closed the socket connection')
+    },
+    initialize: (detectors) => {
+      // console.log('incoming message', detectors)
+      store.commit('listDetections', JSON.parse(detectors))
+    }
+  },
+
   mounted: () => {
     console.log('[MAIN::MOUNTED]', window.location)
     // zif (location.hash.includes('type')) store.commit('setName', location.hash.split('=')[1])
