@@ -35,7 +35,7 @@
                       rel="noopener"
                       target="_blank"
 
-                      :href="'https://github.com/JosephusPaye/Keen-UI/blob/master/' + $route.meta.sourceUrl"
+                      :href="'https://github.com/djoq/vuex-boilerplate/blob/master/src/' + $route.meta.sourceUrl"
 
                       v-if="$route.meta.sourceUrl"
                   >View Source</a>
