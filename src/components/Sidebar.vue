@@ -12,42 +12,10 @@
         </div>
 
         <div class="keen-docs-sidebar__scrollable">
-            <div class="keen-docs-sidebar__description">
-                <p>A lightweight collection of essential UI components written with Vue.js and inspired by Material Design.</p>
-            </div>
 
-            <div class="keen-docs-sidebar__version-select">
-                <ui-select
-                    :options="['app1', 'app2', 'app3']"
-                    @select="onVersionSelect"
-                    v-model="application"
-                >Version</ui-select>
-            </div>
 
             <ul class="keen-docs-sidebar__menu">
                 <li class="keen-docs-sidebar__menu-section">
-                <!-- <div class="keen-docs-sidebar__menu-section-header">Usage</div>
-
-                   <ul class="keen-docs-sidebar__menu-section-links">
-                        <li>
-                            <a
-                                class="keen-docs-sidebar__menu-item"
-                                href="https://github.com/JosephusPaye/Keen-UI/tree/master#keen-ui"
-                                rel="noopener"
-                                target="_blank"
-                            >Getting Started <ui-icon>open_in_new</ui-icon></a>
-                        </li>
-
-                        <li>
-                            <a
-                                class="keen-docs-sidebar__menu-item"
-                                href="https://github.com/JosephusPaye/Keen-UI/blob/master/Customization.md#customization"
-                                rel="noopener"
-                                target="_blank"
-                            >Customization <ui-icon>open_in_new</ui-icon></a>
-                        </li>
-                    </ul> 
-                  -->
                 </li>
 
                 <li class="keen-docs-sidebar__menu-section" v-for="section in menu" :key="section.title">

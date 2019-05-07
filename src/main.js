@@ -13,7 +13,6 @@ import imported from './components/'
 Vue.config.productionTip = false
 
 Vue.component('About', imported.overVue)
-Vue.component('Carousel', imported.carousel)
 Vue.component('Test', imported.Test)
 Vue.component('Test', imported.Test)
 // componentAdditions

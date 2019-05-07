@@ -14,11 +14,10 @@
         <transition name="transition-slide">
             <side-bar class="is-mobile" v-show="showSidebar"></side-bar>
         </transition>
-          <div class="keen-docs-content__toolbar">
-              <div class="keen-docs-content__toolbar-content">
+
                   <ui-icon-button
                       class="keen-docs-content__toolbar-menu-button"
-                      color="white"
+                      color="blue"
                       type="clear"
 
                       @click="showSidebar = true"
@@ -28,19 +27,7 @@
                       </ui-icon>
                   </ui-icon-button>
 
-                  <h1 class="keen-docs-content__toolbar-title">{{ $route.meta.title }}</h1>
-
-                  <a
-                      class="keen-docs-content__toolbar-action"
-                      rel="noopener"
-                      target="_blank"
-
-                      :href="'https://github.com/djoq/vuex-boilerplate/blob/master/src/' + $route.meta.sourceUrl"
-
-                      v-if="$route.meta.sourceUrl"
-                  >View Source</a>
-              </div>
-          </div>
+                  <h1 class=""> &nbsp; {{ $route.meta.title }}</h1>
 
           <div class="keen-docs-content__page-content is-desktop" ref="pageContent">
               <router-view ></router-view>
