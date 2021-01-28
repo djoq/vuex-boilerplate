@@ -86,7 +86,7 @@
     "vue-template-compiler": "^2.2.6",
     "vuetify": "^0.12.1",
     "webpack": "^2.3.3",
-    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
