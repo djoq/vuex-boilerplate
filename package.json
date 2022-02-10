@@ -18,7 +18,7 @@
     "fs": "0.0.1-security",
     "jsdom": "^11.0.0",
     "keen-ui": "^1.0.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^7.0.0",
     "sass-loader": "^6.0.5",
     "vue": "^2.2.6",
     "vue-material": "^0.7.1",
