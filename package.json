@@ -16,7 +16,7 @@
     "axios": "^0.21.2",
     "chai-http": "^3.0.0",
     "fs": "0.0.1-security",
-    "jsdom": "^11.0.0",
+    "jsdom": "^16.5.0",
     "keen-ui": "^1.0.0",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
